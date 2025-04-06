@@ -1,0 +1,33 @@
+THypervBox COM Server 5.1.4_OSE r110228 win.amd64 (Aug  6 2020 11:19:57) release log
+00:00:00.049738 main     Log opened 2023-08-28T09:50:55.883807300Z
+00:00:00.049738 main     Build Type: release
+00:00:00.049738 main     OS Product: Windows 10
+00:00:00.049738 main     OS Release: 10.0.22621
+00:00:00.049738 main     OS Service Pack: 
+00:00:00.256028 main     DMI Product Name: VivoBook_ASUSLaptop X421FAY_K413FA
+00:00:00.280069 main     DMI Product Version: 1.0       
+00:00:00.280069 main     Host RAM: 3895MB total, 263MB available
+00:00:00.281066 main     Executable: C:\Program Files\AndroidTbox\TBoxSVC.exe
+00:00:00.281066 main     Process ID: 29744
+00:00:00.281066 main     Package type: WINDOWS_64BITS_GENERIC (OSE)
+00:00:00.292616          THypervBox: object creation starts
+00:00:00.296134          Home directory: 'C:\Users\ASUS\.THypervBox'
+00:00:00.303626          Installed Drivers:
+00:00:00.327645            C:\Program Files\AndroidTbox\TBoxDrv.sys (Version: 5.1.4.10228)
+00:00:00.344147          USBLibInit: USB Service not found
+00:00:00.645294          netIfGetBoundAdapters: could not find either 'hyperv_TBoxNetLwf' or 'sun_TBoxNetFlt' components (0x1)
+00:00:00.668984          HostDnsMonitorProxy::notify
+00:00:00.679501          VD: VDInit finished
+00:00:00.692444          ERROR [COM]: aRC=E_FAIL (0x80004005) aIID={db57efcf-a490-11e9-be35-005056c00008} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.697915          THypervBox: object created
+00:00:01.062627          ERROR [COM]: aRC=TBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={db55a5e1-a490-11e9-be17-005056c00008} aComponent={THypervBoxWrap} aText={Could not find a registered machine named 'TVM_100'}, preserve=false aResultDetail=0
+00:00:01.187371          ERROR [COM]: aRC=TBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={db55a5e1-a490-11e9-be17-005056c00008} aComponent={THypervBoxWrap} aText={Could not find a registered machine named 'TVM_100'}, preserve=false aResultDetail=0
+00:00:01.977178          Loading settings file "E:\Program Files\TxGameAssistant\VDI_100_x64\TVM_100.tbox" with version "1.12-windows"
+00:00:04.010527          ERROR [COM]: aRC=TBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={db572c80-a490-11e9-9df5-005056c00008} aComponent={SessionMachine} aText={Could not find a shared folder named 'tapkdir'}, preserve=false aResultDetail=0
+00:00:05.467880          WARNING [COM]: aRC=E_FAIL (0x80004005) aIID={db57c8c1-a490-11e9-a2fd-005056c00008} aComponent={HostWrap} aText={Could not load the Host USB Proxy Service (VERR_FILE_NOT_FOUND). The service might not be installed on the host computer}, preserve=true  aResultDetail=0
+00:08:07.924057 main     THypervBox: object deletion starts
+00:08:07.928658 main     ERROR [COM]: aRC=TBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={db5c5c9f-a490-11e9-af47-005056c00008} aComponent={MediumWrap} aText={Medium 'E:\Program Files\TxGameAssistant\VDI_100_x64\android_system_disk.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:08:07.930652 main     ERROR [COM]: aRC=TBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={db5c5c9f-a490-11e9-af47-005056c00008} aComponent={MediumWrap} aText={Medium 'E:\Program Files\TxGameAssistant\VDI_100_x64\android_data_disk.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:08:07.930652 main     ERROR [COM]: aRC=TBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={db5c5c9f-a490-11e9-af47-005056c00008} aComponent={MediumWrap} aText={Medium 'E:\Program Files\TxGameAssistant\VDI_100_x64\android_sdcard_disk.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:08:07.952695 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={db55a5e1-a490-11e9-be17-005056c00008} aComponent={THypervBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:08:07.955727 main     THypervBox: object deleted

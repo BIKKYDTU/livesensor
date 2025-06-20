@@ -16,8 +16,7 @@ from sensor.utils import dump_csv_file_to_mongodb_collection
 
 
 if __name__ == "__main__":
-
-        file_path="C:\Users\ASUS\Desktop\SENSORLIVE\aps_failure_training_set1.csv"
-        databased_name="ineuron"
-        collection_name = "sensor"
-        dump_csv_file_to_mongodb_collection(file_path,database_name,collection_name)     
+    file_path = r"C:\Users\ASUS\Desktop\SENSORLIVE\aps_failure_training_set1.csv"
+    database_name = "sensor_db"
+    collection_name = "training_data"
+    dump_csv_file_to_mongodb_collection(file_path, database_name, collection_name)

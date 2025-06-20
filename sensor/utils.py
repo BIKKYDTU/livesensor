@@ -5,7 +5,7 @@ import json
 from sensor.config import mongo_client
 
 
-def dump_csv_file_to_mongodb_collection(file_path:str,database_name:str,collection_name:str)->none:
+def dump_csv_file_to_mongodb_collection(file_path: str, database_name: str, collection_name: str) -> None:
 
     try:
         df= pd.read_csv(file_path)

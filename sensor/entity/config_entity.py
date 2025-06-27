@@ -6,10 +6,13 @@ import sensor.constant import training_pipeline
 class TrainingPipelineConfig:
 
     def __init__(self,timestamp:datetime):
+
         timestamp=timestamp.strftime("%m_%d_%Y_%H_%M_%S")
 
         self.pipeline_name = training_pipeline.PIPELINE_NAME
+
         self.artifact_dir=os.path.join(training_pipeline.ARTIFACT_DIR,timestamp)
+        
         self.timestamp:str=timestamp
 
        
@@ -32,7 +35,7 @@ class DataIngestionConfig:
         self.data_ingestion_dir, training_pipeline.
         DATA_INGESTION_INGESTED_DIR, training_pipeline.TEST_FILE_NAME)
        
-       self.train_test_split: float = training_pipeline.
+       self.train_test_split: float = training_pipeline.           
        DATA_INGESTION_TRAIN_TEST_SPLIT_RATION
        self.collection_name: str = training_pipeline.
        DATA_INGESTION_COLLECTION_NAME

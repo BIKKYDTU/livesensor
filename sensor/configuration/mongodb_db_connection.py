@@ -6,10 +6,10 @@ ca = certifi.where()
 from sensor.constant.env_variable import MONGODB_URL_KEY
 import os 
 import logging 
-
+   
 load_dotenv()
-class MongoDBClient:
-    client = None
+class MongoDBClient:   
+    client = None  
 
     def __init__(self, database_name=DATABASE_NAME) -> None:
         try:
@@ -28,4 +28,6 @@ class MongoDBClient:
         except Exception as e:
             logging.error(f"Error initializing MongoDB client: {e}")
             raise
- 
+
+               
+  

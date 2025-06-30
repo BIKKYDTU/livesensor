@@ -3,7 +3,7 @@ import os
 import sys
 
 from sensor.logger import logging
-from sensor.utils import dump_csv_file_to_mongodb_collection
+from sensor.utils2 import dump_csv_file_to_mongodb_collection
 #def test_exception():
  #   try:
  #       logging.info("ki yaha p bhaiaa ek error ayegi diveision by zero wali error ")

@@ -4,5 +4,7 @@ numpy
 scikit-learn
 pymongo
 python-dotenv
+PyYAML
+dill
 
  #-e .  #editable mode  

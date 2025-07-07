@@ -1,3 +1,21 @@
+from pymongo import MongoClient
+
+# ✅ Directly use your correct MongoDB Atlas URI
+MONGO_URI = "mongodb+srv://BIKKY8586:BIKKY8586@cluster0.nu7og55.mongodb.net/?retryWrites=true&w=majority"
+
+client = MongoClient(MONGO_URI)
+
+# ✅ Use your actual DB and collection names
+db = client["sensor_db"]
+collection = db["training_data"]
+
+# ❗ Delete all documents from the collection
+result = collection.delete_many({})
+print(f"Deleted {result.deleted_count} documents.")
+
+
+
+
 from sensor.exception import SensorException
 import os 
 import sys
@@ -20,3 +38,4 @@ if __name__ == "__main__":
     database_name = "sensor_db"
     collection_name = "training_data"
     dump_csv_file_to_mongodb_collection(file_path, database_name, collection_name)
+            

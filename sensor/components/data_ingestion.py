@@ -2,7 +2,7 @@
 from sensor.exception import SensorException
 from sensor.logger import logging
 import os 
-import sys
+import sys 
 from pandas import DataFrame
 from sensor.entity.config_entity import DataIngestionConfig
 from sensor.entity.artifact_entity import DataIngestionArtifact
@@ -85,7 +85,13 @@ class DataIngestion:
     def initiate_data_ingestion(self) -> DataIngestionArtifact:
         try:
             dataframe = self.export_data_into_feature_store()
+            print("🔥 Number of rows in DataFrame:", len(dataframe))
+            print("🔥 Columns in DataFrame:", dataframe.columns.tolist())
+            print("🔥 First few rows:\n", dataframe.head())
+            if dataframe.empty:
+             raise SensorException(Exception("❌ DataFrame is empty. Cannot proceed with dropping columns or saving."), sys)
 
+            
             dataframe=dataframe.drop(self._schema_config["drop_columns"],axis=1)
 
             self.split_data_as_train_test(dataframe=dataframe)
@@ -99,6 +105,7 @@ class DataIngestion:
             raise SensorException(e,sys)
 
 
-
+       
 
     
+                                                                    

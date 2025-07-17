@@ -85,11 +85,9 @@ class DataTransformationConfig:
         
         
         self.transformed_object_file_path: str = os.path.join( self.data_transformation_dir, training_pipeline.DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR,
-            training_pipeline.PREPROCESSING_OBJECT_FILE_NAME,)
-        
+            training_pipeline.PREPROCSSING_OBJECT_FILE_NAME,)
 
-
-
+   
 
 class ModelTrainerConfig:
 
@@ -113,11 +111,16 @@ class ModelTrainerConfig:
 
 
 
+class ModelEvaluationConfig:
 
+    def __init__(self,training_pipeline_config:TrainingPipelineConfig):
 
+        self.model_evaluation_dir: str = os.path.join(
+            training_pipeline_config.artifact_dir, training_pipeline.MODEL_EVALUATION_DIR_NAME
+        )
 
-   
+        self.report_file_path = os.path.join(self.model_evaluation_dir,training_pipeline.MODEL_EVALUATION_REPORT_NAME)
 
-
-
+        
+        self.change_threshold = training_pipeline.MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE
 

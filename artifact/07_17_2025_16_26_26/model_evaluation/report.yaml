@@ -1,0 +1,9 @@
+best_model_metric_artifact: null
+best_model_path: null
+improved_accuracy: null
+is_model_accepted: true
+train_model_metric_artifact: !!python/object:sensor.entity.artifact_entity.ClassificationMetricArtifact
+  f1_score: 0.9751162154771671
+  precision_score: 0.9845389287686361
+  recall_score: 0.9658721560130011
+trained_model_path: artifact\07_17_2025_16_26_26\model_trainer\trained_model\model.pkl

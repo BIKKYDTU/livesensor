@@ -1,0 +1,9 @@
+{
+    "git.ignoreLimitWarning": true,
+    "mdb.presetConnections": [
+        {
+            "name": "Preset Connection",
+            "connectionString": "mongodb://localhost:27017"
+        }
+    ]
+}

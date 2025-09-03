@@ -1,13 +1,3 @@
-pymongo[srv]==4.2.0
-pandas
-numpy
-scikit-learn
-pymongo
-python-dotenv
-PyYAML
-dill
-scipy
-imblearn==0.0
-xgboost==1.6.2
--e .  #editable mode    
-      
+pymongo==4.2.0
+
+-e .  #editable mode 

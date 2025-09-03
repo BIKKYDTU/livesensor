@@ -103,7 +103,7 @@ class DataTransformation:
             transformed_input_test_feature =preprocessor_object.transform(input_feature_test_df)
 
 
-            smt = SMOTETomek(sampling_strategy="minority")
+            smt = SMOTETomek(sampling_strategy="minority")   
 
 
             input_feature_train_final, target_feature_train_final = smt.fit_resample(

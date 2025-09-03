@@ -9,8 +9,6 @@ In heavy-duty transport, the braking system depends heavily on multiple sensors 
 Traditional inspection methods are manual, slow, and unreliable for real-time scenarios. LiveSensor solves this problem by building an end-to-end ML pipeline that processes large-scale sensor data and detects faults early and accurately.
 
 
----
-
 🎯 Key Features
 
 📥 Sensor Data Handling → Ingests large volumes of real-world air pressure sensor data from heavy vehicles.
@@ -36,7 +34,6 @@ XGBoost, CatBoost, AdaBoost
 
 
 
----
 
 🛠️ Tech Stack
 
@@ -51,8 +48,6 @@ Matplotlib, Seaborn → Visualization
 Jupyter Notebook → Experimentation
 
 
-
----
 
 📂 Workflow
 
@@ -74,10 +69,6 @@ Jupyter Notebook → Experimentation
 6. (Future) Real-time deployment in heavy vehicles for early warnings.
 
 
-
-
----
-
 🚀 Impact on Heavy Vehicles
 
 🛡️ Safety → Prevents brake failure and accidents caused by faulty air systems.
@@ -89,16 +80,7 @@ Jupyter Notebook → Experimentation
 📈 Scalability → Can be integrated into fleet-wide monitoring for logistics and transport companies.
 
 
-
----
-
-📸 Preview
-
-(Add pipeline diagram or dashboard screenshots here)
-
-
----
-
 📢 Author
 
 👤 [BIKKY KUMAR]
+Linkedin Profile -   https://www.linkedin.com/in/bikky-kumar-91a312243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
